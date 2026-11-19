@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Teste seus conhecimentos sobre o Estatuto da Criança e do Adolescente com o Quiz Educativo do ECA.">
+
+    <title>Quiz do ECA | Rede de Proteção</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- CSS específico do quiz -->
+    <link rel="stylesheet" href="assets/quiz.css">
+
+    <!-- JavaScript do quiz -->
+    <script src="assets/quiz.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#conteudo" class="skip-link">
+        Pular para o conteúdo
+    </a>
+
+    <!-- CABEÇALHO -->
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                <span>Rede de Proteção</span>
+            </a>
+
+            <nav class="navigation" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="index.html#conselho">O Conselho</a>
+                <a href="guia-eca.html">Guia do ECA</a>
+                <a href="quiz.html">Quiz educativo</a>
+                <a href="index.html#contatos">Contatos</a>
+            </nav>
+
+            <button class="quick-exit" id="quickExit" type="button">
+                Saída rápida
+            </button>
+
+        </div>
+
+    </header>
+
+    <main id="conteudo">
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="quiz-hero">
+
+            <div class="container">
+
+                <span class="tag">Aprenda brincando</span>
+
+                <h1>
+                    Quiz educativo do
+                    <span>ECA</span>
+                </h1>
+
+                <p>
+                    Teste seus conhecimentos sobre os direitos
+                    das crianças e dos adolescentes.
+                    Responda às perguntas e descubra quanto
+                    você sabe sobre o Estatuto da Criança
+                    e do Adolescente.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- QUESTIONÁRIO -->
+
+        <section class="quiz-section">
+
+            <div class="container">
+
+                <div class="quiz-card" id="quizCard">
+
+                    <!-- PROGRESSO -->
+
+                    <div class="quiz-top">
+
+                        <span id="questionCounter">
+                            Pergunta 1 de 8
+                        </span>
+
+                        <span id="scoreCounter">
+                            Acertos: 0
+                        </span>
+
+                    </div>
+
+                    <div class="progress-container"
+                         role="progressbar"
+                         aria-label="Progresso do questionário"
+                         aria-valuemin="0"
+                         aria-valuemax="8"
+                         aria-valuenow="0"
+                         id="progressContainer">
+
+                        <div class="progress-bar" id="progressBar"></div>
+
+                    </div>
+
+                    <!-- PERGUNTA -->
+
+                    <div id="questionArea">
+
+                        <span class="question-label">
+                            Conhecimentos sobre o ECA
+                        </span>
+
+                        <h2 id="questionText">
+                            Carregando pergunta...
+                        </h2>
+
+                        <div class="answers-grid" id="answersArea">
+                        </div>
+
+                        <!-- FEEDBACK -->
+
+                        <div id="feedback"
+                             class="feedback"
+                             role="status"
+                             aria-live="polite"
+                             hidden>
+
+                            <h3 id="feedbackTitle"></h3>
+
+                            <p id="feedbackText"></p>
+
+                        </div>
+
+                        <button id="nextButton"
+                                class="next-button"
+                                type="button"
+                                hidden>
+
+                            Próxima pergunta →
+
+                        </button>
+
+                    </div>
+
+                    <!-- RESULTADO FINAL -->
+
+                    <div id="resultArea" hidden>
+
+                        <div class="result-icon">🏆</div>
+
+                        <span class="question-label">
+                            Resultado do questionário
+                        </span>
+
+                        <h2 id="resultTitle">
+                            Quiz concluído!
+                        </h2>
+
+                        <p id="resultMessage"></p>
+
+                        <div class="result-score">
+                            <span id="finalScore">0</span>
+                            <small>de 8 acertos</small>
+                        </div>
+
+                        <p id="resultPercentage"></p>
+
+                        <button id="restartButton"
+                                class="next-button"
+                                type="button">
+
+                            Refazer o quiz
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="quiz-tip">
+
+                    <strong>Dica:</strong>
+
+                    Se tiver dúvidas sobre alguma resposta,
+                    consulte nosso
+                    <a href="guia-eca.html">Guia Interativo do ECA</a>.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FONTE -->
+
+        <section class="quiz-source">
+
+            <div class="container">
+
+                <h2>Quer aprender mais?</h2>
+
+                <p>
+                    Consulte o texto oficial do Estatuto da Criança
+                    e do Adolescente e conheça todos os direitos
+                    previstos na legislação.
+                </p>
+
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l8069compilado.htm"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Consultar o ECA no site oficial do Planalto
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h2>Rede de Proteção</h2>
+
+            <p>
+                Informação, conscientização e proteção dos direitos
+                de crianças e adolescentes.
+            </p>
+
+            <p class="footer-copy">
+                Projeto acadêmico de extensão.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
